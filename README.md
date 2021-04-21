@@ -18,15 +18,13 @@ Menghapus image
 
 Mendapatkan daftar container pada lokal yang runnning
 > docker container ls
-
---all ,untuk melihat beserta yang tidak running
+> --all ,untuk melihat beserta yang tidak running
 
 Membuat container
 > docker container create <namaImages>
-
---name <namaCustomContaienr> ,untuk memberi nama container
--p luar:dalam, untuk pengaturan port.
--e ,menambahkan environment variable
+> --name <namaCustomContaienr> ,untuk memberi nama container
+> -p luar:dalam, untuk pengaturan port.
+> -e ,menambahkan environment variable
 
 Menjalankan container
 > docker container start <namaContainer>
@@ -45,11 +43,10 @@ Membuat image dari Dockerfile
 
 Menjalankan kontainer dari image yang dibuat
 > docker run <namaImage>
-
--t ,untuk mengaktifkan akses terminal
--d ,untuk menjalankan pada background
--p ,menentukan port container
---name ,nama container
+> -t ,untuk mengaktifkan akses terminal
+> -d ,untuk menjalankan pada background
+> -p ,menentukan port container
+> --name ,nama container
 
 
 ## Docker Network
@@ -58,8 +55,8 @@ Menjalankan kontainer dari image yang dibuat
 
 ## Lainnya
 
-docker ps -a
+> docker ps -a
 
-docker exec -it <namaContainer>
+> docker exec -it <namaContainer>
 
 
